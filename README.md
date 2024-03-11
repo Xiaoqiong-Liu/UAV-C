@@ -12,9 +12,19 @@ The benchmark dataset includes sequences of UAV footage subjected to a variety o
 - Blur
 - Composite
 
-Each specific corruption type has different levels of severity to simulate varying conditions.
+Each specific corruption type has 3 levels of severity to simulate varying conditions.
 
 ## Getting Started
 To evaluate your UAV tracking algorithm with this benchmark, follow the steps below:
 
 1. **Clone the Repository**
+2. **Install Dependencies**
+- Install the required Python packages:
+  ```
+  pip install -r requirements.txt
+  ```
+
+3. **Prepare the Dataset**
+- Download the dataset from the [releases page](https://github.com/your-username/uav-tracking-corruption-benchmark/releases).
+- Extract the dataset into the `data/` directory.
+
