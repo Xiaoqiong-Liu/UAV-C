@@ -30,4 +30,4 @@ To evaluate your UAV tracking algorithm with this benchmark, follow the steps be
 
 ## Quantitative Results
 We evaluated 12 trackers on the UAV-C benchmark. The table below summarizes the performance of each tracker across all types of corruptions. Success performance is measured with the metric \( mS_{cor} \), averaged over all corruption types.
-![Corruption Types](CorruptionVisual.jpg)
+![Corruption Types](Performances.jpg)
