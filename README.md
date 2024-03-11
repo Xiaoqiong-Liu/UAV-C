@@ -18,5 +18,5 @@ Each specific corruption type has 3 levels of severity to simulate varying condi
 ## Quantitative Results
 We evaluated 12 trackers on the UAV-C benchmark. The table below summarizes the performance of each tracker across all types of corruptions. Success performance is measured with the metric \( mS_{cor} \), averaged over all corruption types.
 ![Corruption Types](Performances.png)
-![Success](Success.png)
-![Precision](Precision.png)
+![Success](radar_success.png)
+![Precision](radar_precision.png)
