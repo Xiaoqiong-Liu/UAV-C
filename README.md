@@ -14,20 +14,9 @@ The benchmark dataset includes sequences of UAV footage subjected to a variety o
 
 Each specific corruption type has 3 levels of severity to simulate varying conditions.
 
-## Getting Started
-To evaluate your UAV tracking algorithm with this benchmark, follow the steps below:
-
-1. **Clone the Repository**
-2. **Install Dependencies**
-- Install the required Python packages:
-  ```
-  pip install -r requirements.txt
-  ```
-
-3. **Prepare the Dataset**
-- Download the dataset from the [releases page](https://github.com/your-username/uav-tracking-corruption-benchmark/releases).
-- Extract the dataset into the `data/` directory.
 
 ## Quantitative Results
 We evaluated 12 trackers on the UAV-C benchmark. The table below summarizes the performance of each tracker across all types of corruptions. Success performance is measured with the metric \( mS_{cor} \), averaged over all corruption types.
 ![Corruption Types](Performances.png)
+![Success](Success.png)
+![Precision](Precision.png)
