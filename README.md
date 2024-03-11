@@ -1,7 +1,7 @@
 # Benchmarking the Robustness of UAV Tracking Against Common Corruptions
 
 ## Introduction
-Unmanned Aerial Vehicle (UAV) tracking has become an essential technology in various applications ranging from surveillance to delivery services. However, UAVs often operate in dynamic and challenging environments that can degrade the performance of tracking algorithms. This repository presents a comprehensive benchmark for evaluating the robustness of UAV tracking algorithms against common visual corruptions.
+This repository presents a benchmark study focused on the robustness of UAV tracking methods against various common corruptions. Tracking robustness is crucial for practical UAV applications, where visual conditions can significantly vary due to environmental factors.
 
 ![Corruption Types](CorruptionVisual.jpg)
 
@@ -28,3 +28,6 @@ To evaluate your UAV tracking algorithm with this benchmark, follow the steps be
 - Download the dataset from the [releases page](https://github.com/your-username/uav-tracking-corruption-benchmark/releases).
 - Extract the dataset into the `data/` directory.
 
+## Quantitative Results
+We evaluated 12 trackers on the UAV-C benchmark. The table below summarizes the performance of each tracker across all types of corruptions. Success performance is measured with the metric \( mS_{cor} \), averaged over all corruption types.
+![Corruption Types](CorruptionVisual.jpg)
