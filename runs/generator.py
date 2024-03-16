@@ -99,15 +99,12 @@ def generate(args):
     subfolders.sort()
     for i,sequence_directory in enumerate(subfolders):
         images = load_sequence(f'{args.seq_dir}/{sequence_directory}')
-        # distortions = [
-        #     'gaussian_noise', 'shot_noise', 'impulse_noise',
-        #     'defocus_blur', 'glass_blur', 'motion_blur', 'zoom_blur',
-        #     'snow', 'frost', 'fog', 'brightness',
-        #     'contrast', 'elastic_transform', 'pixelate', 'jpeg_compression',
-        #     'speckle_noise', 'gaussian_blur', 'spatter', 'saturate'
-        # ]
         distortions = [
-            'gaussian_noise', 'shot_noise', 'impulse_noise'
+            'gaussian_noise', 'shot_noise', 'impulse_noise',
+            'defocus_blur', 'glass_blur', 'motion_blur', 'zoom_blur',
+            'snow', 'frost', 'fog', 'brightness',
+            'contrast', 'elastic_transform', 'pixelate', 'jpeg_compression',
+            'speckle_noise', 'gaussian_blur', 'spatter', 'saturate'
         ]
         severity = 3
         depth_distortions = ['fog_shot_noise']
