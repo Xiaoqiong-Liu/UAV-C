@@ -57,15 +57,15 @@ pip install -e .
 2. **Generate Corruptions**:
    - Example command for DTB70:
      ```bash
-     python main.py --seq_dir /data/DTB70 --output_dir /data/UAV123_10fps_noisy 
+     python main.py --seq_dir /data/DTB70 --output_dir /data/UAV-C
      ```
    - Example command for UAV123_10fps:
      ```bash
-     python main.py --seq_dir /data/UAV123_10fps --output_dir /data/UAV123_10fps_noisy 
+     python main.py --seq_dir /data/UAV123_10fps --output_dir /data/UAV-C
      ```
    - Example output dataset structure of UAV-C
       ```
-      data_corrupt/
+      UAV-C/
          ├── Animal1/
          │   ├── contrast/
          │   │   ├── 1/
