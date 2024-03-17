@@ -82,7 +82,6 @@ def generate_distortion(args, sequence_directory, distortion, images, severity):
     if not os.path.exists(severity_dir):
         os.makedirs(severity_dir) 
 
-    
     for i in range(len(images)):
         print(i)
         frame = images[i]
@@ -97,15 +96,14 @@ def generate_distortion(args, sequence_directory, distortion, images, severity):
             corrupted_frame = clipped_zoom_blur_seq(images, severity, i)
         else:
             corrupted_frame = corrupt(frame, severity, corruption_name=distortion)
-        
         cv2.imwrite(f'{severity_dir}/image{i:06}_{distortion}.jpg', corrupted_frame)
         print('writing image to ', f'{severity_dir}/image{i:06}_{distortion}.jpg')
 
 # Map imageNet-C distortions to the appropriate function (corrupt)
 corruption_dict = {distortion: generate_distortion for distortion in Distortions1}
 corruption_dict.update({distortion: generate_composite_distortions for distortion in Composite_distortions})
-# Map depth distortions to the appropriate function (distort_depth_image)
 
+# Map depth distortions to the appropriate function (distort_depth_image)
 corruption_dict.update({depth_distortion: generate_depth_distortion for depth_distortion in Depth_distortions})
 
 def distort(args, sequence_directory, corruption_name, images, severity): # a wrapper for the distortions
