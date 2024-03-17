@@ -63,6 +63,28 @@ pip install -e .
      ```bash
      python main.py --seq_dir /data/UAV123_10fps --output_dir /data/UAV123_10fps_noisy 
      ```
+   - Example output struction for UAV-C
+      ```
+         data_corrupt/
+      ├── Animal1/
+      │   ├── contrast/
+      │   │   ├── 1/
+      │   │   ├── 3/
+      │   │   └── 5/
+      │   └── blur/
+      │       ├── 1/
+      │       ├── 3/
+      │       └── 5/
+      └── Animal2/
+         ├── contrast/
+         │   ├── 1/
+         │   ├── 3/
+         │   └── 5/
+         └── blur/
+            ├── 1/
+            ├── 3/
+            └── 5/
+      ```
 
 ## Quantitative Results
 We evaluated 12 trackers on the UAV-C benchmark. The table below summarizes the performance of each tracker across all types of corruptions. The last row is measured with the metric \( mS_{cor} \), averaged over all corruption types.
