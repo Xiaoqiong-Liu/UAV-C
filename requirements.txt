@@ -1,0 +1,13 @@
+numpy
+torch
+matplotlib
+PIL
+imageio
+opencv-python  # For cv2
+imgaug
+scipy
+concurrent.futures; python_version >= "3.2"
+glob2  # If you're using glob in a non-standard Python environment, glob2 might be needed
+argparse; python_version < "3.2"  # argparse is part of the standard library in Python 3.2 and later
+warnings  # Part of Python's standard library, so no need to include it in requirements.txt
+random  # Also part of the standard library
