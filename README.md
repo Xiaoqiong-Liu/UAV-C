@@ -65,25 +65,25 @@ pip install -e .
      ```
    - Example output struction for UAV-C
       ```
-         data_corrupt/
-      ├── Animal1/
-      │   ├── contrast/
-      │   │   ├── 1/
-      │   │   ├── 3/
-      │   │   └── 5/
-      │   └── blur/
-      │       ├── 1/
-      │       ├── 3/
-      │       └── 5/
-      └── Animal2/
-         ├── contrast/
-         │   ├── 1/
-         │   ├── 3/
-         │   └── 5/
-         └── blur/
-            ├── 1/
-            ├── 3/
-            └── 5/
+      data_corrupt/
+         ├── Animal1/
+         │   ├── contrast/
+         │   │   ├── 1/
+         │   │   ├── 3/
+         │   │   └── 5/
+         │   └── blur/
+         │       ├── 1/
+         │       ├── 3/
+         │       └── 5/
+         └── Animal2/
+            ├── contrast/
+            │   ├── 1/
+            │   ├── 3/
+            │   └── 5/
+            └── blur/
+               ├── 1/
+               ├── 3/
+               └── 5/
       ```
 
 ## Quantitative Results
