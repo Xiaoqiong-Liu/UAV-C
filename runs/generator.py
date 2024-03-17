@@ -107,7 +107,11 @@ def generate(args):
             images = load_sequence(f'{args.seq_dir}/{sequence_directory}')
             
             distortions = [
-                'rain_defocusBlur', 'rain_gaussianNoise', 'defocusBlur_gaussianNoise', 'rain_defocusBlur_gaussianNoise'
+                'clean','gaussian_noise', 'shot_noise', 'impulse_noise',
+                'defocus_blur', 'motion_blur', 'zoom_blur',
+                'snow', 'frost', 'rain',
+                'contrast', 'fog',
+                'speckle_noise', 'gaussian_blur', 'spatter','rain_defocusBlur', 'rain_gaussianNoise', 'defocusBlur_gaussianNoise', 'rain_defocusBlur_gaussianNoise'
             ]
             severitys = [1,3,5]
             for distortion in distortions:
