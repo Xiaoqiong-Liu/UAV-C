@@ -8,7 +8,7 @@ This repository presents a benchmark study focused on the robustness of UAV trac
 ## How to use this repository
 
 1. **Download Datasets**:
-   - Obtain the **DTB70** and **UAV123_10fps** datasets, which serve as the foundation for evaluating tracker robustness. 
+   - Obtain the **DTB70** and **UAV123_10fps** datasets, which serve as the clean foundation for corruption simulation. 
 
 2. **Dataset Setup**:
    - Place the downloaded datasets in a designated directory within this repository. It's recommended to organize the datasets in a structured manner, such as:
@@ -20,7 +20,7 @@ This repository presents a benchmark study focused on the robustness of UAV trac
 ### Generating Depth Maps
 
 1. **Run Depth Map Generator**:
-   - Execute the depth map generation script provided in the `tools/` directory. Adjust the script's parameters if necessary to point to your dataset locations.
+   - Execute the depth map generation script provided in the `runs/` directory. Adjust the script's parameters if necessary to point to your dataset locations.
    - Command for generate depth map for DTB70:
      ```bash
      python main.py --phase 'depth_estimation' --seq_dir '/yourpath/DTB70'
@@ -29,14 +29,26 @@ This repository presents a benchmark study focused on the robustness of UAV trac
      ```bash
      python main.py --phase 'depth_estimation' --seq_dir '/yourpath/UAV123_10fps'
      ```
+### Download libaray Corruptions from ImageNet-C
+- Command for install libary from ImageNet-C:
+```bash
+git clone https://github.com/hendrycks/robustness.git
+cd robustness/ImageNet-C/imagenet_c/imagenet_c
+cd ..
+pip install -e .
+```
 
 ### Applying Corruptions
 
-1. **Select Corruption Types and Levels**:
-   - This benchmark includes 17 corruption types, each with three severity levels(1 3 5). 
+1. **Select Corruption Types**:
+   - This benchmark includes 17 corruption types, each with three severity levels(1 3 5).  'runs/generator' by default generate 17 types of corruption together, you could modify corruption types if necessary.
 
 2. **Generate Corruptions**:
    - Example command for DTB70:
+     ```bash
+     python main.py --seq_dir /data/DTB70 --output_dir /data/UAV123_10fps_noisy 
+     ```
+   - Example command for UAV123_10fps:
      ```bash
      python main.py --seq_dir /data/UAV123_10fps --output_dir /data/UAV123_10fps_noisy 
      ```
