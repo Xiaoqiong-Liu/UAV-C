@@ -3,11 +3,7 @@
 ## Introduction
 This repository presents a benchmark study focused on the robustness of UAV tracking methods against various common corruptions. Tracking robustness is crucial for practical UAV applications, where visual conditions can significantly vary due to environmental factors.
 
-![Corruption Types](CorruptionVisual.jpg)
-<video width="320" height="240" controls>
-  <source src="car_zoom_blur_video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![teaser](car_zoom_blur.gif)
 
 ## How to use this repository
 
