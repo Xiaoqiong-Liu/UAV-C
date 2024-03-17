@@ -8,7 +8,7 @@ This repository presents a benchmark study focused on the robustness of UAV trac
 ## How to use this repository
 
 1. **Download Datasets**:
-   - Obtain the **DTB70** and **UAV123_10fps** datasets, which serve as the clean foundation for corruption simulation. 
+   - Obtain the [**DTB70**](https://github.com/flyers/drone-tracking) and [**UAV123_10fps**](https://cemse.kaust.edu.sa/ivul/uav123) datasets, which serve as the clean foundation for corruption simulation. 
 
 2. **Dataset Setup**:
    - Place the downloaded datasets in a designated directory within this repository. It's recommended to organize the datasets in a structured manner, such as:
@@ -25,7 +25,7 @@ This repository presents a benchmark study focused on the robustness of UAV trac
      ```bash
      python main.py --phase 'depth_estimation' --seq_dir '/yourpath/DTB70'
      ```
-    - Command for generate depth map for UAV123_10fps:
+   - Command for generate depth map for UAV123_10fps:
      ```bash
      python main.py --phase 'depth_estimation' --seq_dir '/yourpath/UAV123_10fps'
      ```
