@@ -11,7 +11,7 @@ This repository presents a benchmark study focused on the robustness of UAV trac
    - Obtain the [**DTB70**](https://github.com/flyers/drone-tracking) and [**UAV123_10fps**](https://cemse.kaust.edu.sa/ivul/uav123) datasets, which serve as the clean foundation for corruption simulation. 
 
 2. **Dataset Setup**:
-   - Place the downloaded datasets in a designated directory within this repository. It's recommended to organize the datasets in a structured manner, such as:
+   - Place the downloaded datasets, it's recommended to organize in a structured manner, such as:
      ```
      /data/DTB70
      /data/UAV123_10fps
