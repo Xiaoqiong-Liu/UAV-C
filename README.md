@@ -41,7 +41,7 @@ pip install -e .
 ### Applying Corruptions
 
 1. **Select Corruption Types**:
-   - This benchmark includes 17 corruption types, each with three severity levels(1 3 5).  'runs/generator' by default generate 17 types of corruption together, you could modify corruption types if necessary.
+   - This benchmark includes 17 corruption types, each with three severity levels(1 3 5).  ['runs/generator'](https://github.com/Xiaoqiong-Liu/UAV-C/blob/main/runs/generator.py) by default generate 17 types of corruption together, you could modify corruption types(line 109) if necessary.
 
 2. **Generate Corruptions**:
    - Example command for DTB70:
