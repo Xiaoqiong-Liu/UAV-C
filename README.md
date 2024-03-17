@@ -1,7 +1,7 @@
 # Benchmarking the Robustness of UAV Tracking Against Common Corruptions
 
 ## Introduction
-This repository presents a benchmark study focused on the robustness of UAV tracking methods against various common corruptions. Tracking robustness is crucial for practical UAV applications, where visual conditions can significantly vary due to environmental factors.
+This repository presents a benchmark study focused on the robustness of UAV tracking methods against various common corruptions.
 
 ![teaser](car_zoom_blur.gif)
 
@@ -16,9 +16,8 @@ This repository presents a benchmark study focused on the robustness of UAV trac
      /data/DTB70
      /data/UAV123_10fps
      ```
-### Python envrionment.
-1. **Requirement**:
-   - Ensure you have python installed on your system. This project is tested with python 3.6+
+### Requirements
+1. This project is tested with python 3.6+
 2. **Install the required Python packages**:
    ```
    pip install -r requirements.txt
