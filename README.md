@@ -3,7 +3,7 @@
 ## Introduction
 This repository presents a benchmark study focused on the robustness of UAV tracking methods against various common corruptions. Tracking robustness is crucial for practical UAV applications, where visual conditions can significantly vary due to environmental factors.
 
-![Corruption Types](CorruptionVisual.jpg)
+![Corruption Types](car_zoom_blur_video.mp4)
 
 ## How to use this repository
 
@@ -30,7 +30,7 @@ This repository presents a benchmark study focused on the robustness of UAV trac
      python main.py --phase 'depth_estimation' --seq_dir '/yourpath/UAV123_10fps'
      ```
 ### Download libaray Corruptions from ImageNet-C
-- Command for install libary from ImageNet-C:
+- Command for install libaray from ImageNet-C:
 ```bash
 git clone https://github.com/hendrycks/robustness.git
 cd robustness/ImageNet-C/imagenet_c/imagenet_c
