@@ -63,7 +63,7 @@ pip install -e .
      ```bash
      python main.py --seq_dir /data/UAV123_10fps --output_dir /data/UAV123_10fps_noisy 
      ```
-   - Example output struction for UAV-C
+   - Example output dataset structure of UAV-C
       ```
       data_corrupt/
          ├── Animal1/
