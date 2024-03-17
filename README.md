@@ -17,7 +17,7 @@ This repository presents a benchmark study focused on the robustness of UAV trac
      /data/UAV123_10fps
      ```
 ### Requirements
-1. This project is tested with python 3.6+
+1. **This project is tested with python 3.6+**
 2. **Install the required Python packages**:
    ```
    pip install -r requirements.txt
