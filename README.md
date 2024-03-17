@@ -6,7 +6,7 @@ This repository presents a benchmark study focused on the robustness of UAV trac
 ![teaser](car_zoom_blur.gif)
 
 ## How to use this repository
-
+### Prepare clean dataset
 1. **Download Datasets**:
    - Obtain the [**DTB70**](https://github.com/flyers/drone-tracking) and [**UAV123_10fps**](https://cemse.kaust.edu.sa/ivul/uav123) datasets, which serve as the clean foundation for corruption simulation. 
 
@@ -16,6 +16,18 @@ This repository presents a benchmark study focused on the robustness of UAV trac
      /data/DTB70
      /data/UAV123_10fps
      ```
+### Python envrionment.
+1. **Requirement**:
+   - Ensure you have python installed on your system. This project is tested with python 3.6+
+2. **Install the required Python packages**:
+   '''bash
+   pip install -r requirements.txt
+   '''
+   If requirements.txt is not provided, manually install the libraries using:
+   '''bash
+   pip install numpy torch matplotlib PIL imageio opencv-python imgaug scipy
+   '''
+3. **For ImageNet-C corruptions, follow the additional setup instructions provided in [ImageNet-C](https://github.com/hendrycks/robustness).**
 
 ### Generating Depth Maps
 
