@@ -1,7 +1,7 @@
-# [Benchmarking the Robustness of UAV Tracking Against Common Corruptions](http://arxiv.org/abs/2403.11424)
+# [Benchmarking the Robustness of UAV Tracking Against Common Corruptions]
 
-## Introduction
-This repository presents a benchmark study focused on the robustness of UAV tracking methods against various common corruptions.
+## Welcome
+This repository presents a benchmark study focused on the robustness of UAV tracking methods against various common corruptions. [**Paper link**](http://arxiv.org/abs/2403.11424)
 
 ![teaser](car_zoom_blur.gif)
 
